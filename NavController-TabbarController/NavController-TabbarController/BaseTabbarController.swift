@@ -35,7 +35,7 @@ class BaseTabbarController: UITabBarController, UITabBarControllerDelegate {
         
         settingNavForEachController(homeVC, transparent: true, navTitle: "Home NAV", tabbarTitle: "Home", image: "Home", selectedImage: "Selected-Home")
         
-        settingNavForEachController(bookVC, transparent: true, navTitle: "Book NAV", tabbarTitle: "Book", image: "Book", selectedImage: "Selected-Books")
+        settingNavForEachController(bookVC, transparent: true, navTitle: "Book NAV", tabbarTitle: "Book", image: "Book", selectedImage: "Selected-URBook")
         
         settingNavForEachController(profileVC, transparent: true, navTitle: "Profile NAV", tabbarTitle: "Profile", image: "Profile", selectedImage: "Selected-Profile")
         
