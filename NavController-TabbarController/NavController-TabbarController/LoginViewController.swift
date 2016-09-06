@@ -28,6 +28,8 @@ class LoginViewController: BaseViewController {
         updateContraint(LogoToTopViewContraint)
         
         createUser()
+        tranparent = true
+        setTitleForBackButton = "tro ve"
     }
     
     @IBAction func signUpAction(sender: AnyObject) {
@@ -40,9 +42,9 @@ class LoginViewController: BaseViewController {
     }
     
     func createUser() {
-        let user1 = User(name: "sunsunai", password: "123456")
-        let user2 = User(name: "lucio", password: "123456")
-        let user3 = User(name: "lucia", password: "123456")
+        let user1 = User(name: "Sunsunai", password: "123456")
+        let user2 = User(name: "Lucio", password: "123456")
+        let user3 = User(name: "Lucia", password: "123456")
         
         users = [user1, user2, user3]
     }

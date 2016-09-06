@@ -15,7 +15,30 @@ class BaseViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    var tranparent : Bool?{
+        didSet{
+            if tranparent == true {
+                setTranparentForUINav()
+            }
+        }
+    }
+    var setTitleForBackButton: String? {
+        didSet{
+            guard let title = setTitleForBackButton else { return}
+            setTitleForBackButton(title)
+        }
+    }
     
+    func setTranparentForUINav() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+    }
+    func setTitleForBackButton(title: String){
+        let backButton = UIBarButtonItem()
+        backButton.title = title
+        navigationItem.backBarButtonItem = backButton
+    }
     
     // MARK: Update Contraints
     
